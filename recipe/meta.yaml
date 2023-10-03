@@ -11,7 +11,7 @@ source:
   
 build:
   skip: True  # [not linux]
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -20,7 +20,7 @@ requirements:
     - ninja
     - pkg-config
   host:
-    - boost
+    - libboost-python-devel
     - gsl
     - libopenblas
     - hdf5
