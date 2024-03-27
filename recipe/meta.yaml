@@ -11,11 +11,12 @@ source:
   
 build:
   skip: True  # [not linux]
-  number: 2
+  number: 3
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - meson 
     - ninja
     - pkg-config
