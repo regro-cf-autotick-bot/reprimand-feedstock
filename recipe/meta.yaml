@@ -11,7 +11,7 @@ source:
   
 build:
   skip: True  # [not linux]
-  number: 3
+  number: 4
 
 requirements:
   build:
@@ -23,12 +23,12 @@ requirements:
   host:
     - libboost-python-devel
     - gsl
-    - libopenblas
+    - libblas
+    - libcblas
     - hdf5
     - zlib
   run:
     - gsl
-    - libopenblas
     - hdf5
 
 test:
